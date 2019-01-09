@@ -83,14 +83,15 @@ li {
 /*Forside style*/
 .containerforside {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
-    background: linear-gradient(to left, white 0%, white 33%, #E4E2E2 33%, #E4E2E2 100%);
+    /*background: linear-gradient(to left, white 0%, white 33%, #E4E2E2 33%, #E4E2E2 100%);*/
+	background: #e4e2e2;
     border: 1px solid black;
 }
 .forsidebillede {
     text-align: center;
 }
 .forsidebillede img {
-    width: 80%;
+    width: 70%;
     height: auto;
     box-shadow: none;
     border: none;
@@ -126,6 +127,10 @@ li {
     right: 80px;
     bottom: 1px;
 }
+.hiddentext h3{
+	display: inline;
+}
+
 .flow1 img {
     width: 70%;
     height: auto;
@@ -392,6 +397,7 @@ li {
     cursor: pointer;
     color: #00818B;
     text-decoration: none;
+	font-weight: 600;
 }
 .flowlink p{
 	hyphens: auto;
@@ -603,10 +609,11 @@ form .submit {
     border-bottom: 1px solid #000000;
 }
 /*About style*/
+.rowone{
+	margin-top: 10%;
+}
 .aboutpic img {
     width: 50%;
-    box-shadow: none;
-    border: none;
 }
 .basketball1 img{
 	width: 70%;
