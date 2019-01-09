@@ -1,0 +1,1007 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: 'Nunito', sans-serif;
+}
+/*Style på alle sider*/
+img {
+    border: 1px solid #858585;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+}
+.SoMeimages {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+}
+.socialemedier img {
+    width: 50%;
+    box-shadow: none;
+    border: none;
+}
+.normalnavigation {
+    padding: 0 5%;
+}
+
+.navigationsdiv{
+	width: 33%;
+	height: 40px;
+	position: relative;
+}
+.logo img {
+    position: relative;
+    bottom: 20px;
+    left: 10%;
+    width: 60%;
+    height: auto;
+    box-shadow: none;
+    border: none;
+}
+#navigation {
+    margin-top: 2%;
+	display: flex;
+}
+#navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.20em;
+    transition: all 300ms;/*font-weight: 600;*/
+	position: absolute;
+	bottom: 10%;
+	left: 15%;
+}
+#navigation a:hover {
+    cursor: pointer;
+    color: #00818B;
+    font-size: 25px;
+}
+#navigation .currentpage {
+    color: #00818B;
+    border-bottom: 1px solid #00818B;
+}
+nav{
+	display: none;
+}
+#footer li {
+    list-style-type: none;
+    font-size: 0.80em;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+	color: black;
+}
+li {
+    text-align: justify;
+}
+#footer {
+    margin-left: 65%;
+    margin-top: 5%;
+}
+.footerkontakt h2 {
+    font-size: 1em;
+    text-align: inherit;
+    border-bottom: 1px solid #000000;
+}
+/*Forside style*/
+.containerforside {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+    background: linear-gradient(to left, white 0%, white 33%, #E4E2E2 33%, #E4E2E2 100%);
+    border: 1px solid black;
+}
+.forsidebillede {
+    text-align: center;
+}
+.forsidebillede img {
+    width: 80%;
+    height: auto;
+    box-shadow: none;
+    border: none;
+}
+.tekst {
+    text-align: center;
+}
+.img-slide {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+/*Projekter style*/
+/*hover effekt med inspiration fra https://www.w3schools.com/howto/howto_css_image_overlay.asp*/
+.overskriftprojekter {
+    display: none;
+}
+.flow1, .flow2, .flow3, .flow4, .flow5 {
+    position: relative;
+}
+.flow1og2, .flow1, .flow3 {
+    margin-top: 1%;
+}
+.flow3, .flow4 {
+    margin-right: 1%;
+}
+.flow1og2, .flow5, .flow1 {
+    margin-left: 1%;
+}
+.flow1 .hiddentext {
+    position: relative;
+    right: 80px;
+    bottom: 1px;
+}
+.flow1 img {
+    width: 70%;
+    height: auto;
+    margin-top: 1%;
+	margin-left: -1%;
+}
+.flow2 .hiddentext {
+    position: relative;
+    right: 20px;
+    bottom: 1px;
+}
+.flow2 img {
+    width: 90%;
+    height: auto;
+}
+.flow3 {
+    text-align: right;
+}
+.flow3 .hiddentext {
+    position: relative;
+	left: 55px;
+    bottom: 1px;
+}
+.flow3 img {
+    width: 80%;
+    height: auto;
+    box-shadow: none;
+    border: none;
+}
+.flow4 {
+    margin-top: 11.8%;
+}
+.flow4 img {
+    width: 100%;
+    height: auto;
+}
+.flow5 {
+    margin-top: 4.8%;
+    margin-left: 1%;
+}
+.flow5 img {
+    width: 100%;
+    height: auto;
+}
+.smalltekst{
+	display: none;
+}
+/* hover på billeder i projekter*/
+.flow1 a, .flow2 a, .flow3 a, .flow4 a, .flow5 a{
+	text-decoration: none;
+	color: #00818B;
+}
+.hiddentext {
+    background-color: #00818B;
+    color: white;
+    font-size: 16px;
+    padding: 16px 16px;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+	width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.flow4 .middle{
+	width: 65%; 
+}
+.flow1 img, .flow2 img, .flow3 img, .flow4 img, .flow5 img {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.flow1:hover img, .flow2:hover img, .flow3:hover img, .flow4:hover img, .flow5:hover img {
+    opacity: 0.6
+}
+.flow1:hover .middle, .flow2:hover .middle, .flow3:hover .middle, .flow4:hover .middle, .flow5:hover .middle {
+    opacity: 1;
+}
+/*Flow sider style*/
+/*link og dropdowns med inspiration fra https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button*/
+.overskriftlink, .dropknap {
+    margin-right: 1%;
+    opacity: 0.85;
+    cursor: pointer;
+}
+.overskriftlink:hover, .dropknap:hover {
+    opacity: 1;
+}
+.overskriftlink h1, .dropknap h1 {
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.overskriftlink h1:hover {
+    background: #00818B;
+    color: white;
+}
+.overskriftlink a, .dropknap a {
+    text-decoration: none;
+    color: black;
+}
+.dropdownmenu {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.dropdownindhold {
+    display: none;
+    position: absolute;
+    background: #00818B;
+    border-radius: 4px;
+	top: 79%;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdownindhold a {
+    color: white;
+    padding: 5px 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+}
+.dropdownindhold a:hover {
+    background-color: #00818B;
+    color: black;
+}
+.dropdownmenu:hover .dropdownindhold {
+    display: block;
+}
+.menulinje {
+    text-align: center;
+}
+.lillemenulinje {
+    display: none;
+}
+.billedtekst h1, .billedtekst h2 {
+    text-align: left;
+}
+.flowtekst p {
+    font-weight: 700;
+    text-align: left;
+    margin-right: 5%;
+}
+.lilleflowtekst {
+    display: none;
+}
+.flowtekst a, .lilleflowtekst a {
+    text-decoration: none;
+    color: #006169;
+}
+.row {
+    margin-top: 2%;
+    text-align: center;
+}
+.row p {
+    text-align: justify;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+/*Arrows med inspiration fra https://codepen.io/carstenmeyer/pen/rraoAp*/
+.pic {
+    margin: 2% 5%;/* demo spacing */
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+}
+.rightarrow {
+    text-align: right;
+}
+.arrow-left {
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-right: 18px solid #737373;
+    cursor: pointer;
+}
+.arrow-right {
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 18px solid #737373;
+    color: black;
+    cursor: pointer;
+}
+.previous, .next {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.previous:hover, .next:hover {
+    color: #959595;
+}
+.largearrows {
+    display: flex;
+}
+.smallarrows {
+    display: none;
+}
+/*flow1*/
+.flow1underside {
+    text-align: center;
+}
+.flow1underside img {
+    width: 90%;
+}
+.flow1billede img {
+    width: 90%;
+}
+.appbillede img {
+    width: 68%;
+}
+/*flow2*/
+.flow2underside {
+    text-align: center;
+}
+.flow2underside img {
+    width: 90%;
+}
+.flow2folderstructure img {
+    margin-top: 6%;
+    width: 41%;
+}
+.flow2skitse {
+    text-align: center;
+}
+.flow2skitse img {
+    width: 90%;
+}
+.flow2logoundervejs img {
+    width: 73%;
+}
+.flow2logo img {
+    margin-top: 6%;
+    width: 90%;
+}
+.ideas img {
+    width: 80%;
+}
+.pen img {
+    width: 80%;
+    box-shadow: none;
+    border: none;
+}
+.projectpage {
+    padding: 5%;
+}
+.projectpage img {
+    width: 100%;
+}
+/*Flow 3*/
+/*dropdown med inspiration fra https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button*/
+.flow3underside {
+    text-align: center;
+}
+.flow3underside img {
+    width: 90%;
+    border: none;
+    box-shadow: none;
+}
+.flowlink a {
+    cursor: pointer;
+    color: #00818B;
+    text-decoration: none;
+}
+.flowlink p{
+	hyphens: auto;
+}
+img {
+    height: auto;
+}
+.flow3wire img {
+    width: 80%;
+    height: auto;
+    margin-top: 15%;
+}
+.flow3brainstoming img {
+    width: 50%;
+    height: auto;
+}
+.flow3ikonideer img {
+    width: 70%;
+    height: auto;
+    margin-top: 20%;
+}
+.flow3laginddeling img {
+    width: 70%;
+    height: auto;
+}
+.ipadproto img, .iphoneproto img {
+    width: 80%;
+    height: auto;
+}
+.farve img {
+    width: 50%;
+    height: auto;
+}
+.flowchart img {
+    width: 50%;
+    height: auto;
+}
+.sitemap img {
+    width: 90%;
+    height: auto;
+    margin-right: 100%;
+}
+.appikoner img {
+    width: 80%;
+    height: auto;
+}
+.versiontwo img {
+    width: 80%;
+}
+/*Flow4 style*/
+.flow4projektstyrring img {
+    width: 90%;
+	box-shadow: none;
+	border: none;
+}
+.flowchart4 img {
+    width: 60%;
+    height: auto;
+}
+.sweetbotikon img {
+    width: 95%;
+    margin: 1%;
+}
+.hotbotlogo img {
+    width: 90%;
+    box-shadow: none;
+    border: none;
+}
+.ikonskitse img {
+    width: 90%;
+    height: auto;
+}
+.newversions img {
+    width: 90%;
+    height: auto;
+}
+/*flow 5 style*/
+.flow5sitemap img{
+	width: 90%;
+	box-shadow: none;
+	border: none;
+}
+.flow5flowchart{
+	text-align: center;
+	margin-top: 3%;
+}
+.flow5flowchart img{
+	width: 20%;
+	box-shadow: none;
+	border: none;
+}
+.flowafsnit{
+	margin-top: 11%;
+}
+.projektstyrring img{
+	width: 90%;
+	
+	box-shadow: none;
+	border: none;
+}
+.flow5farver{
+	margin-top: 8%;
+}
+.ganttkort img{
+	width: 90%;
+}
+.lilleprojektstyrring{
+	display: none;
+}
+.lilleflow4projektstyrring{
+	display: none;
+}
+.lilleflowchart4{
+	display: none;
+}
+.portfoliopic img{
+	width: 90%;
+}
+.iphone img{
+	box-shadow: none;
+	border: none;
+	width: 50%;
+}
+.ipad img{
+	box-shadow: none;
+	border: none;
+	width: 80%;
+}
+.web img{
+	box-shadow: none;
+	border: none;
+	width: 90%;
+}
+.lilleparagraf{
+	display: none;
+}
+.lillecoding{
+	display: none;
+}
+/*Contact style*/
+
+.contact-form {
+    text-align: center;
+	margin-top: -5%;
+}
+.contact-title {
+    text-align: center;
+    margin-top: 2%;
+}
+.contact-titel h1 {
+    transition: all 1s ease-in-out;
+}
+.form-control {
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-family: 'Nunito', sans-serif;
+}
+form {
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+input {
+    height: 40px;
+}
+form .submit {
+    /*background: #1a8089;*/
+    border-color: transparent;
+    color: black;
+	border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+	cursor: pointer;
+}
+.kontaktside{
+	margin-top: 10%;
+}
+.kontaktsideinfo{
+	height: 600px;
+}
+.overskriftkontakt{
+	text-align: center;
+	margin-top: -10%;
+}
+.kontaktsideinfo li {
+    list-style-type: none;
+    font-size: 0.80em;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+	margin-left: 50px;
+	color: black;
+}
+.kontaktsideinfobillede img{
+	width: 70%;
+	margin-left: 18%;
+}
+#footer {
+    margin-left: 65%;
+    margin-top: 5%;
+}
+.footerkontakt h2 {
+    font-size: 1em;
+    text-align: inherit;
+    border-bottom: 1px solid #000000;
+}
+/*About style*/
+.aboutpic img {
+    width: 50%;
+    box-shadow: none;
+    border: none;
+}
+.basketball1 img{
+	width: 70%;
+	margin-top: -30%;
+}
+.basketball2 img{
+	width: 90%;
+	margin-top: -15%;
+}
+.together img{
+	width: 50%;
+}
+@media handheld, only screen and (max-width: 1193px) {
+.containerforside {
+    vw: 748px;
+}
+.logo img {
+    top: 5%;
+    width: 80%;
+}
+#navigation a {
+    font-size: 1.20em;
+}
+.overskriftprojekter {
+    display: flex;
+    text-align: center;
+    margin-top: 5%;
+}
+.overskriftprojekter h1 {
+    font-size: 3em;
+}
+#footer {
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.flow3, .flow2, .flow1 {
+    text-align: center;
+}
+form .submit {
+    font-size: 15px;
+}
+.contact-title h1 {
+    font-size: 1.2em;
+}
+}
+
+@media handheld, only screen and (max-width: 1180px) {
+#navigation a {
+    font-size: 1.10em;
+}
+}
+
+@media handheld, only screen and (max-width: 1086px) {
+#navigation a {
+    font-size: 1em;
+}
+.flow3 img{
+	margin-left: 20%;	
+}
+.flow2 img{
+	margin-right: 20%;	
+}
+.flow1 img{
+	margin-right: 30%;	
+}
+
+}
+
+@media handheld, only screen and (max-width: 992px) {
+#navigation a {
+    font-size: 0.9em;
+}
+}
+
+@media handheld, only screen and (max-width: 899px) {
+#navigation a {
+    font-size: 0.8em;
+}
+}
+
+@media handheld, only screen and (max-width: 805px) {
+#navigation a {
+    font-size: 0.7em;
+}
+}
+
+@media handheld, only screen and (max-width: 768px) {
+/*Navigation style*/
+#navigation a {
+    font-size: 1em;
+	margin-bottom: 15%;
+}
+/*Flow undeside style*/
+.flowtekst {
+    display: none;
+}
+.lilleflowtekst {
+    display: flex;
+}
+.lilleflowtekst p {
+    font-weight: 700;
+    text-align: left;
+    margin-right: 5%;
+}
+.lillemenulinje {
+    display: flex;
+    text-align: center;
+}
+.menulinje {
+    display: none;
+}
+/*Projekter style*/
+.overskriftprojekter{
+	margin-top: -5%;		
+}
+.overskriftprojekter h1 {
+    font-size: 2em;
+}
+.projekter {
+    text-align: center;
+	margin-top: -15%;
+}
+.flow1 img {
+    width: 95%;
+    height: auto;
+    margin-top: 1%;
+}
+.flow2 img {
+    width: 95%;
+    height: auto;
+}
+.flow3{
+	margin-top: 15%;
+}
+.flow3 img {
+    width: 95%;
+	margin-left: 0;
+    height: auto;
+    box-shadow: none;
+    border: none;
+}
+.flow4 img {
+    width: 95%;
+    height: auto;
+}
+.flow5 img {
+    width: 95%;
+    height: auto;
+}
+.smalltekst{
+	width: 100%;
+	display: flex;
+}
+.smalltekst p{
+	position: relative;
+	left: 15px;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+/*Slideshov style*/
+.slideknap1, .slideknap2, .slideknap3, .slideknap4, .slideknap5 {
+    width: 16%;
+    padding: 1%;
+    margin-left: 10%;
+    margin-top: 50%;
+}
+.bullets {
+    margin: auto;
+    width: 20%;
+    margin-left: 40%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+/*about style*/
+.basketball1 img{
+	margin-top: 0;
+}
+.basketball2 img{
+	margin-top: 0;
+}
+/*Kontaktstyle*/
+.kontaktsideinfo{
+	margin-top: 15%;	
+}
+.kontaktsideinfo ul{
+	margin-left: 20%;	
+}
+.kontaktsideinfobillede img{
+	width: 70%;
+	height: auto;
+}
+.overskriftlink h1:hover {
+    background: none;
+}
+}
+
+@media handheld, only screen and (max-width: 375px) {
+html, body{
+	height: 100%;
+}
+/*Navigation, body og logo style*/
+nav{
+	display: flex;
+}
+.containerforside {
+    box-shadow: none;
+    background: linear-gradient(to left, white 0%, white 33%, #E4E2E2 33%, #E4E2E2 100%);
+    border: none;
+}
+.logo img {
+    margin-top: 15%;
+    width: 80%;
+}
+/*Projekterstyle*/
+.overskriftprojekter {
+    display: flex;
+    text-align: center;
+    margin-top: -8%;
+}
+.overskriftprojekter h1 {
+    font-size: 1.75em;
+}
+.flow5 .projekttitel {
+	top: 125px;
+	left: 10px;
+	color: black;
+	font-size: 1.2em;
+	text-shadow: 5px black;
+	font-weight: 800;
+}
+.flow1, .flow2, .flow3, .flow4, .flow5 {
+    position: relative;
+}
+.flow1 {
+    text-align: center;
+}
+.flow1 img {
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+}
+.flow2 img {
+    width: 100%;
+    height: auto;
+}
+.flow3 {
+    text-align: center;
+	margin-top: 10%;
+}
+.flow3 img {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    border: none;
+}
+.flow4 img {
+    width: 100%;
+    height: auto;
+}
+.flow5 img {
+    width: 100%;
+    height: auto;
+}
+/*Flow underside style*/
+.row p {
+    text-align: left;
+	margin-left: 0;
+}
+.lilleflowtekst p{
+	margin-right: 0;
+}
+/*Flow5*/
+.lilleprojektstyrring{
+	display: block;
+}
+.lilleprojektstyrring img{
+	width: 100%;
+	height: auto;
+	box-shadow: none;
+	border: none;
+}
+.lilleparagraf{
+	display: flex;
+}
+.lillecoding{
+	display: flex;
+}
+/*Flow4*/
+.lilleflow4projektstyrring{
+	display: block;
+}
+.lilleflow4projektstyrring img{
+	width: 100%;
+	height: auto;
+	border: none;
+	box-shadow: none;
+}
+.lilleflowchart4{
+	display: block;
+}
+.lilleflowchart4 img{
+	width: 60%;
+	height: auto;
+}
+/*About style*/
+.abouttext h1{
+	font-size: 1.2em;
+}
+.basketball1 img{
+	margin-top: 0;
+}
+.basketball2 img{
+	margin-top: 0;
+}
+/*Frem og tilbage pile*/
+.largearrows {
+    display: none;
+}
+.smallarrows {
+    display: flex;
+}
+/*Footer style*/
+#footer {
+    margin-left: 0;
+}
+/*Burgermenu style*/
+.SoMeimages {
+    position: relative;
+    top: 5%;
+}
+/*Burgermenu med inspiration fra https://www.competa.com/blog/responsive-menu-with-only-css3-no-javascript/?fbclid=IwAR1DngSxzBtz-mh9qsk3_S1ObfFtJnVxD1RbSpHOEkSLTtyiqmpgLt_fIu0*/	
+nav .menuliste {
+    text-align: right;
+    padding: 2%;
+    list-style: none;
+    font-size: 1.2em;
+    margin-right: 3%;
+}
+.menuliste h2{
+	font-weight: 400;
+	display: inline;
+}
+.menupunkt1 {
+    margin-top: 20%;
+}
+.navi a {
+    text-decoration: none;
+    color: black;
+}
+.navi .menu {
+    width: 378px;
+    height: 100%;
+    border: 1px solid #444;
+    background: white;
+    position: fixed;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    right: 0;
+	z-index: 10;
+}
+.menuliste .active {
+    color: #1E7C85;
+}
+.navi input#toggle {
+    display: none;
+}
+.navi input#toggle + label {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background: url(../images/portfolio-new/newportfolio/1x/menubar2.png) center right no-repeat;
+    position: fixed;
+    right: 6%;
+    top: 81%;
+    cursor: pointer;
+    z-index: 11;
+}
+input#toggle:checked ~ .menu {
+    top: -800px;
+}
+/*Contact style*/
+.form-control {
+    width: 100%;
+}
+.kontaktsideinfo{
+	margin-left: -10px;
+	margin-top: 20%;
+}
+.kontaktsideinfo ul{
+	margin-left: -40px;
+}
+.contact-form h1, .overskriftkontakt h1 {
+	font-size: 1.2em;
+}
+}
