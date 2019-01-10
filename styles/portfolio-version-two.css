@@ -360,10 +360,10 @@ li {
     text-align: center;
 }
 .flow2skitse img {
-    width: 90%;
+    width: 78%;
 }
 .flow2logoundervejs img {
-    width: 73%;
+    width: 90%;
 }
 .flow2logo img {
     margin-top: 6%;
@@ -406,12 +406,12 @@ img {
     height: auto;
 }
 .flow3wire img {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin-top: 15%;
 }
 .flow3brainstoming img {
-    width: 50%;
+    width: 70%;
     height: auto;
 }
 .flow3ikonideer img {
@@ -432,7 +432,7 @@ img {
     height: auto;
 }
 .flowchart img {
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 .sitemap img {
@@ -536,6 +536,10 @@ img {
 }
 .lillecoding{
 	display: none;
+}
+/*Examstyle*/
+.exam img{
+	box-shadow: none;
 }
 /*Contact style*/
 
@@ -887,6 +891,11 @@ nav{
 }
 .lilleflowtekst p{
 	margin-right: 0;
+}
+	
+/*Flow 3*/
+.sitemap img {
+    margin-right: 0;
 }
 /*Flow5*/
 .lilleprojektstyrring{
