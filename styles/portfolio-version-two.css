@@ -160,7 +160,6 @@ li {
 .flow3 .hiddentext {
     position: relative;
 	right: 55px;
-    bottom: 1px;
 }
 .flow3 img {
     width: 80%;
@@ -189,8 +188,9 @@ li {
     height: auto;
 }
 .examflow {
-    margin-top: 4.8%;
+    margin-top: 7.5%;
     margin-left: 1%;
+	border: 1px solid red;
 }
 .examflow img{
 	width: 100%;
@@ -198,8 +198,9 @@ li {
 }
 .examflow .hiddentext{
 	position: relative;
-	right: 235px;
-	bottom: 30px;
+	right: 230px;
+	margin-top: 50px;
+	border: 1px solid red;
 }
 .smalltekst{
 	display: none;
@@ -236,7 +237,7 @@ li {
     transition: .5s ease;
     backface-visibility: hidden;
 }
-.flow1:hover img, .flow2:hover img, .flow3:hover img, .flow4:hover img, .flow5:hover img, .examflow: hover img{
+.flow1:hover img, .flow2:hover img, .flow3:hover img, .flow4:hover img, .flow5:hover img, .examflow:hover img{
     opacity: 0.6
 }
 .flow1:hover .middle, .flow2:hover .middle, .flow3:hover .middle, .flow4:hover .middle, .flow5:hover .middle, .examflow:hover .middle {
@@ -321,6 +322,8 @@ li {
 .row p {
     text-align: justify;
 	margin-right: 5%;
+}
+.rowleft p{
 	margin-left: 5%;
 }
 /*Arrows med inspiration fra https://codepen.io/carstenmeyer/pen/rraoAp*/
@@ -369,7 +372,7 @@ li {
     width: 90%;
 }
 .flow1billede img {
-    width: 90%;
+    width: 80%;
 }
 .appbillede img {
     width: 68%;
@@ -435,7 +438,7 @@ img {
     height: auto;
 }
 .flow3wire img {
-    width: 90%;
+    width: 80%;
     height: auto;
     margin-top: 15%;
 }
@@ -570,9 +573,25 @@ img {
 .exam img{
 	box-shadow: none;
 }
+.flow5baggrund{
+	position: relative;
+}
 .flow5baggrund img{
-	width: 85%;
-	border: 6px solid white;
+	width: 90%;
+	margin-right: 40px;
+}
+.flow5hover img{
+	width: 70%;
+}
+.ny{
+	margin-top: 2%;
+}
+.align{
+	position: relative;
+}
+.align img{
+	width: 90%;
+	margin-right: 40px;
 }
 /*Contact style*/
 
