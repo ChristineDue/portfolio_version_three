@@ -827,7 +827,8 @@ nav{
 }
 .containerforside {
     box-shadow: none;
-    background: linear-gradient(to left, white 0%, white 33%, #E4E2E2 33%, #E4E2E2 100%);
+   /* background: linear-gradient(to left, white 0%, white 33%, #E4E2E2 33%, #E4E2E2 100%);*/
+	background: #e4e2e2;
     border: none;
 }
 .logo img {
