@@ -1,3 +1,4 @@
+
 .slideshow {
     max-width: 100%;
     height: 450px;
@@ -8,23 +9,24 @@
 .boxomslide{
 	text-align: center;
 }
-.slide1, .slide2, .slide3, .slide4, .slide5 {
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6 {
     position: absolute;
-	right: 20%;
-    width: 120%;
+	right: 30%;
+	top: 10%;
+    width: 100%;
     height: 100%;
 	z-index: 0;
 }
 
-.slideknapdiv1, .slideknapdiv2, .slideknapdiv3, .slideknapdiv4, .slideknapdiv5{
+.slideknapdiv1, .slideknapdiv2, .slideknapdiv3, .slideknapdiv4, .slideknapdiv5, .slideknapdiv6{
 	position: absolute;
-    width: 20%;
-	margin-top: 50%;
-	margin-left: 5%;
+    width: 30%;
+	margin-top: 80%;
+	right: 90%;
     height: auto;
 	z-index: 1;
 }
-.slideknapdiv1 a, .slideknapdiv2 a, .slideknapdiv3 a, .slideknapdiv4 a, .slideknapdiv5 a{
+.slideknapdiv1 a, .slideknapdiv2 a, .slideknapdiv3 a, .slideknapdiv4 a, .slideknapdiv5 a, .slideknapdiv6 a{
 	text-decoration: none;
 	color: black;
 	
@@ -49,35 +51,45 @@
 	animation: fade5slideknap 25s infinite;
     -webkit-animation: fade5slideknap 25s infinite;
 }
+.slideknapdiv6{
+	animation: fade6slideknap 25s infinite;
+    -webkit-animation: fade6slideknap 25s infinite;
+}
 .slide1 {
-    background: url(../images/portfolio-new/slideshow/sweetbot.png)no-repeat center;
+    background: url(../images/portfolio-new/versionthree/examflow3.jpg)no-repeat center;
     background-size: contain;
     animation: fade1 25s infinite;
     -webkit-animation: fade1 25s infinite;
 }
 .slide2 {
-    background: url(../images/portfolio-new/slideshow/mockupflow5.jpg)no-repeat center;
+    background: url(../images/portfolio-new/versionthree/sweetbot2.jpg)no-repeat center;
     background-size: contain;
     animation: fade2 25s infinite;
     -webkit-animation: fade2 25s infinite;
 }
 .slide3 {
-    background: url(../images/portfolio-new/slideshow/app.png)no-repeat center;
+    background: url(../images/portfolio-new/versionthree/flow5-2.jpg)no-repeat center;
     background-size: contain;
     animation: fade3 25s infinite;
     -webkit-animation: fade3 25s infinite;
 }
 .slide4 {
-    background: url(../images/portfolio-new/slideshow/build-your-portfolio.jpg)no-repeat center;
+    background: url(../images/portfolio-new/versionthree/app2.png)no-repeat center;
     background-size: contain;
     animation: fade4 25s infinite;
     -webkit-animation: fade4 25s infinite;
 }
 .slide5 {
-    background: url(../images/portfolio-new/slideshow/dreamyour.jpg)no-repeat center;
+    background: url("../images/portfolio-new/versionthree/build-your-portfolio2.png")no-repeat center;
     background-size: contain;
     animation: fade5 25s infinite;
     -webkit-animation: fade5 25s infinite;
+}
+.slide6 {
+    background: url("../images/portfolio-new/versionthree/dreamyour2.jpg")no-repeat center;
+    background-size: contain;
+    animation: fade6 25s infinite;
+    -webkit-animation: fade6 25s infinite;
 }
 
  @-webkit-keyframes fade1slideknap {
@@ -352,7 +364,7 @@ opacity: 0;
 top: 50px;
 }
 }
- @-webkit-keyframes fade5slideknap {
+@-webkit-keyframes fade5slideknap {
  0% {
 opacity: 0;
 top: 50px;
@@ -377,7 +389,7 @@ top: 50px;
 opacity: 1;
 top: 0;
 }
- 92% {
+ 96% {
 opacity: 0;
 top: 50px;
 }
@@ -411,9 +423,77 @@ top: 50px;
 opacity: 1;
 top: 0;
 }
- 92% {
+ 96% {
 opacity: 0;
 top: 50px;
+}
+ 100% {
+opacity: 0;
+top: 50px;
+}
+}
+@-webkit-keyframes fade6slideknap {
+ 0% {
+opacity: 0;
+top: 50px;
+}
+ 17% {
+opacity: 0;
+top: 50px;
+}
+ 34% {
+opacity: 0;
+top: 50px;
+}
+ 50% {
+opacity: 0;
+top: 50px;
+}
+ 67% {
+opacity: 0;
+top: 50px;
+}
+ 84% {
+opacity: 0;
+top: 50px;
+}
+ 96% {
+opacity: 1;
+top: 0;
+}
+ 100% {
+opacity: 0;
+top: 50px;
+}
+}
+@keyframes fade6slideknap {
+ 0% {
+opacity: 0;
+top: 50px;
+}
+ 17% {
+opacity: 0;
+top: 50px;
+}
+ 34% {
+opacity: 0;
+top: 50px;
+}
+ 50% {
+opacity: 0;
+top: 50px;
+}
+ 67% {
+opacity: 0;
+top: 50px;
+}
+ 84% {
+opacity: 0;
+top: 50px;
+}
+ 96% {
+opacity: 1;
+top: 0;
 }
  100% {
 opacity: 0;
@@ -629,7 +709,7 @@ opacity: 0
 opacity: 0
 }
 }
- @-webkit-keyframes fade5 {
+@-webkit-keyframes fade5 {
  0% {
 opacity:0
 }
@@ -648,7 +728,7 @@ opacity: 0
  84% {
 opacity: 1
 }
- 92% {
+ 96% {
 opacity: 0
 }
  100% {
@@ -674,13 +754,67 @@ opacity: 0
  84% {
 opacity: 1
 }
- 92% {
+ 96% {
 opacity: 0
 }
  100% {
 opacity: 0
 }
 }
+@-webkit-keyframes fade6 {
+ 0% {
+opacity:0
+}
+ 17% {
+opacity: 0
+}
+ 34% {
+opacity: 0
+}
+ 50% {
+opacity: 0
+}
+ 67% {
+opacity: 0
+}
+ 84% {
+opacity: 0
+}
+ 96% {
+opacity: 1
+}
+ 100% {
+opacity: 0
+}
+}
+@keyframes fade6 {
+ 0% {
+opacity:0
+}
+ 17% {
+opacity: 0
+}
+ 34% {
+opacity: 0
+}
+ 50% {
+opacity: 0
+}
+ 67% {
+opacity: 0
+}
+ 84% {
+opacity: 0
+}
+ 96% {
+opacity: 1
+}
+ 100% {
+opacity: 0
+}
+}
+
+
 .slideknap {
 	display: flex;
     font-size: 1.20em;
@@ -690,13 +824,14 @@ opacity: 0
     width: 100%;
 	padding: 5%;
 }
-.slide1 a,.slide2 a,.slide2 a,.slide3 a,.slide4 a, .slide5 a{
+.slide1 a,.slide2 a,.slide2 a,.slide3 a,.slide4 a, .slide5 a, .slide6 a{
 	text-decoration: none;
 	color: black;
 }
 .bullets {
     margin: auto;
     width: 20%;
+	margin-right: 65%;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -729,7 +864,11 @@ opacity: 0
     animation: bulletfade5 25s infinite;
     -webkit-animation: bulletfade5 25s infinite;
 }
- @-webkit-keyframes bulletfade1 {
+.bullet6 {
+    animation: bulletfade6 25s infinite;
+    -webkit-animation: bulletfade6 25s infinite;
+}
+@-webkit-keyframes bulletfade1 {
  0% {
 background: #00818B;
 }
@@ -956,7 +1095,7 @@ background: none;
  84% {
 background: #00818B;
 }
- 92% {
+ 96% {
 background: none;
 }
  100% {
@@ -982,8 +1121,60 @@ background: none;
  84% {
 background: #00818B;
 }
- 92% {
+ 9% {
 background: none;
+}
+ 100% {
+background: none;
+}
+}
+@-webkit-keyframes bulletfade6 {
+ 0% {
+background: none;
+}
+ 17% {
+background: none;
+}
+ 34% {
+background: none;
+}
+ 50% {
+background: none;
+}
+ 67% {
+background: none;
+}
+ 84% {
+background: none;
+}
+ 96% {
+background: #00818B;
+}
+ 100% {
+background: none;
+}
+}
+@keyframes bulletfade6 {
+ 0% {
+background: none;
+}
+ 17% {
+background: none;
+}
+ 34% {
+background: none;
+}
+ 50% {
+background: none;
+}
+ 67% {
+background: none;
+}
+ 84% {
+background: none;
+}
+ 96% {
+background: #00818B;
 }
  100% {
 background: none;

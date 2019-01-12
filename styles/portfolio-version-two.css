@@ -190,7 +190,6 @@ li {
 .examflow {
     margin-top: 7.5%;
     margin-left: 1%;
-	border: 1px solid red;
 }
 .examflow img{
 	width: 100%;
@@ -199,8 +198,7 @@ li {
 .examflow .hiddentext{
 	position: relative;
 	right: 230px;
-	margin-top: 50px;
-	border: 1px solid red;
+	bottom: 30px;
 }
 .smalltekst{
 	display: none;
