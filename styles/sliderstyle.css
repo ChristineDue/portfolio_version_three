@@ -831,7 +831,7 @@ opacity: 0
 .bullets {
     margin: auto;
     width: 20%;
-	margin-right: 65%;
+	margin-right: 70%;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -843,6 +843,7 @@ opacity: 0
 	height: 10px;
 	border: 1px solid black;
 	border-radius: 100%;
+	
 }
 .bullet1 {
     animation: bulletfade1 25s infinite;
