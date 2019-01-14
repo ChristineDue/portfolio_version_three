@@ -831,7 +831,7 @@ opacity: 0
 .bullets {
     margin: auto;
     width: 20%;
-	margin-right: 70%;
+	margin-left: 5%;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;

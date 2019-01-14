@@ -92,6 +92,8 @@ li {
 }
 .forsidebillede img {
     width: 70%;
+	position: relative;
+	bottom: 60px;
     height: auto;
     box-shadow: none;
     border: none;
