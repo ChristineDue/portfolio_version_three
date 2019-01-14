@@ -112,7 +112,7 @@ li {
 .overskriftprojekter {
     display: none;
 }
-.flow1, .flow2, .flow3, .flow4, .flow5 {
+.flow1, .flow2, .flow3, .flow4, .flow5, .examflow {
     position: relative;
 }
 .flow1og2,.flow3 {
@@ -134,6 +134,7 @@ li {
 }
 .hiddentext h3{
 	display: inline;
+	font-size: 1.3em;
 }
 
 .flow1 img {
@@ -199,8 +200,6 @@ li {
 }
 .examflow .hiddentext{
 	position: relative;
-	right: 230px;
-	bottom: 30px;
 }
 .smalltekst{
 	display: none;
@@ -226,11 +225,8 @@ li {
     transform: translate(-50%, -50%);
     text-align: left;
 }
-.examflow .middle{
-	width: 20%;
-}
 .flow4 .middle{
-	width: 75%; 
+	width: 80%; 
 }
 .flow1 img, .flow2 img, .flow3 img, .flow4 img, .flow5 img, .examflow img {
     opacity: 1;
